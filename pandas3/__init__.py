@@ -1,4 +1,4 @@
-from utils import select
+from .utils import select
 from io import StringIO, BytesIO
 import pandas as pd
 import requests
