@@ -39,4 +39,4 @@ client.upload_df('target-bucket-name', df, 'test-df', compression=True)
 ```
 
 ## Next Steps
-Current there is a utils.py file that includes the basics of string manipulation in order to retrieve stored .csv files (as well as compressed .gz) using S3 Select using basic SQL syntax. S3 Select is also able to access JSON documents too. Under the Client class there is a static method that will be used for using this functionality.
+Current there is a utils.py file that includes the basics of string manipulation in order to retrieve stored .csv files (as well as compressed .gz) using S3 Select using basic SQL syntax. S3 Select is also able to access JSON documents too. Under the Client class there is a static method that will be used for using this functionality. The goal here is to have the script upload .csv/.gz/JSON documents into S3 Select, so they can be queried later. There are specific use cases to be handled after this is done.
